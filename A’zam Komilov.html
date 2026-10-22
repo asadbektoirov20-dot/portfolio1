@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A’zam Komilov</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">Azam<i>.</i>K</a>
+    <div class="links" id="links">
+      <a href="#about">Men haqimda</a>
+      <a href="#study">O’qish</a>
+      <a href="#interests">Qiziqishlar</a>
+      <a href="#game">O’yin</a>
+      <a href="#contact">Aloqa</a>
+    </div>
+    <div>
+      <button class="icon-btn" id="theme" aria-label="Mavzuni almashtirish">◐</button>
+      <button class="icon-btn burger" id="burger" aria-label="Menyu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="wrap">
+    <h1 class="kr" id="krTitle" aria-label="꿈은 없어. 목표만 있을 뿐이야.">꿈은 없어.<br><span class="goal">목표만 있을 뿐이야.</span></h1>
+    <p class="name">Men A’zam Komilov</p>
+    <p class="typed" id="typed"></p>
+    <div class="btns">
+      <a class="btn main" href="#contact">Bog’lanish</a>
+      <a class="btn" href="#about">Men haqimda</a>
+    </div>
+    <p class="hint">Sichqonchani harakatlantiring: zarrachalar sizga yaqinlasha olmaydi.</p>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap about">
+    <div class="rv">
+      <h2>Men haqimda</h2>
+      <p class="lead">Salom! Men A’zam. Samarqand davlat universitetida iqtisodiyot yo‘nalishida birinchi kursda o‘qiyman. Ingliz tilini o‘rganaman, o‘yin o‘ynayman va Amerika hamda Koreya madaniyatiga qiziqaman.</p>
+      <div class="tags"><span class="tag">Iqtisodiyot</span><span class="tag">Ingliz tili</span><span class="tag">Koreys tili</span><span class="tag">Mobile Legends</span></div>
+    </div>
+    <ul class="facts card rv">
+      <li><span>Ism</span><b>A’zam Komilov</b></li>
+      <li><span>Universitet</span><b>Samarqand davlat universiteti</b></li>
+      <li><span>Fakultet</span><b>Iqtisodiyot</b></li>
+      <li><span>Kurs</span><b>1-kurs</b></li>
+    </ul>
+  </div>
+</section>
+
+<section id="study">
+  <div class="wrap">
+    <h2 class="rv">O’qish natijalari</h2>
+    <p class="lead rv">Hozirgi baholar va test natijam.</p>
+    <div class="grid">
+      <div class="card tilt rv center"><div class="big">B</div><h3>Matematika</h3><p>Yaxshi natija</p></div>
+      <div class="card tilt rv center"><div class="big">C+</div><h3>Tarix</h3><p>Yaxshilash ustida ishlayman</p></div>
+      <div class="card tilt rv center">
+        <div class="ring" id="ring" data-val="930" data-max="1600">
+          <svg width="130" height="130" viewBox="0 0 120 120"><defs><linearGradient id="g"><stop offset="0" stop-color="#5ad1ff"/><stop offset="1" stop-color="#b06bff"/></linearGradient></defs><circle class="tr" cx="60" cy="60" r="52"/><circle class="pr" cx="60" cy="60" r="52"/></svg>
+          <b id="satNum">0</b>
+        </div>
+        <h3>SAT</h3><p>Scholastic Assessment Test, 1600 balldan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="interests">
+  <div class="wrap">
+    <h2 class="rv">Qiziqishlarim</h2>
+    <p class="lead rv">Vaqtimni nimaga sarflashni yaxshi ko‘raman.</p>
+    <div class="grid">
+      <div class="card tilt rv"><h3>🎮 Mobile Legends: Bang Bang</h3><p>Jamoa bilan o‘ynash, strategiya va tezkor qarorlar.</p></div>
+      <div class="card tilt rv"><h3>📘 Ingliz tilini o‘rganish</h3><p>Har kuni yangi so‘z va yangi gap. Maqsad: erkin gaplashish.</p></div>
+      <div class="card tilt rv"><h3>🇺🇸 Amerika</h3><p>Menga yoqadigan til va davlat. Tili va imkoniyatlari meni ilhomlantiradi.</p></div>
+      <div class="card tilt rv"><h3>🇰🇷 Koreya</h3><p>Menga yoqadigan til va davlat. Koreys tilidagi bio’m ham shundan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="game">
+  <div class="wrap">
+    <h2 class="rv">O’yin profilim</h2>
+    <p class="lead rv">Mobile Legends: Bang Bang. Meni o‘yinda qo‘shing.</p>
+    <div class="game rv">
+      <div><small>Game ID (Server)</small><code>1705070626 (18225)</code></div>
+      <button class="btn main" id="copy">ID’ni nusxalash</button>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap rv">
+    <p class="kr">꿈은 없어. 목표만 있을 뿐이야.<br>나는 그 목표를 이룰 때까지 절대 멈추지 않을 거야. 💯</p>
+    <p>“No dreams, only goals. And I will never stop until I achieve them.” 🔥</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 class="rv">Aloqa</h2>
+    <p class="lead rv">Yozing, men javob beraman.</p>
+    <div class="grid">
+      <a class="card tilt rv" href="https://instagram.com/satoru_fan__" target="_blank" rel="noopener"><h3>Instagram</h3><p>@satoru_fan__ <span class="arrow">→</span></p></a>
+      <a class="card tilt rv" href="https://t.me/azam_02" target="_blank" rel="noopener"><h3>Telegram</h3><p>@azam_02 <span class="arrow">→</span></p></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 A’zam Komilov · Samarqand</footer>
+<div id="toast" role="status">Nusxalandi!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
