@@ -1,23 +1,7 @@
 // Krakozyabra-free helpers
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 
-// Korean headline: letter-by-letter drop
-(function(){
-  const h=$('#krTitle'); let i=0;
-  const wrapChars=(node)=>{
-    [...node.childNodes].forEach(n=>{
-      if(n.nodeType===3){
-        const f=document.createDocumentFragment();
-        [...n.textContent].forEach(c=>{
-          const s=document.createElement('span');
-          s.textContent=c===' '?'\u00A0':c; s.style.animationDelay=(0.15+i++*0.05)+'s'; f.appendChild(s);
-        });
-        n.replaceWith(f);
-      } else if(n.nodeType===1 && n.tagName!=='BR') wrapChars(n);
-    });
-  };
-  wrapChars(h);
-})();
+
 
 // Typing effect
 (function(){
